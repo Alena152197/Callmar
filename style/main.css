@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%) ;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    width: 1520px;
+    margin: auto;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    background: linear-gradient(178.68deg);
+}
+
+header button {
+    font-size: 10px;
+    color: #fcfcfc;
+    line-height: 20px;
+}
+
+header button:nth-of-type(2) {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 38px;
+} 
+
+header button:hover {
+    color: #fcfcfc;
+    border-color: #fcfcfc;
+}
+
+header button:active {
+    color: #fcfcfc;
+    border-color: #fcfcfc;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    z-index: 10;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%) ;
+    margin-top: -192px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes bubblesLeft {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes bubblesRight {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+
+.banner h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    color: white;
+    margin-top: -60px;
+}
+
+.banner p {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 36px;
+    color: white;
+}
+
+.banner button {
+    padding: 17px 55px;
+    background: #d75cd7;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: white;
+    line-height: 42px;
+    
+}
+
+.banner button:hover {
+    background-color: red;
+}
+
+.banner button :active {
+    background-color: #d75cd7;
+}
+
+.image_callmar {
+    margin-top: 60px;
+}
+
+.banner ::before {
+    content: url(./img/Group\ 135.svg);
+    position: absolute;
+    left: 128px;
+    bottom: 109px;
+    animation: bubblesLeft 3s linear infinite alternate ;
+    
+}
+.banner ::after {
+    content: url(./img/Group\ 135.svg);
+    position: absolute;
+    right: 27px;
+    bottom: 31px;
+    animation: bubblesLeft 3s linear infinite alternate ;
+}
+
+.install {
+    width: 1520px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.install_item {
+    width: 738px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 22px 33px 0px;
+    background-color: #523a64;
+    padding: 87px 62px 112px 125px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    color: #fcfcfc;
+    position: relative;
+    overflow: hidden;
+} 
+
+.install_left,
+.install_right {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+.install_left::after {
+    content: url(./img/Аквалангист\ 2\ 1.svg);
+    margin-top: -160px;
+}
+
+.install_right::before {
+    content: url(./img/Аквалангист\ 1.svg);
+    margin-top: 111px;
+    margin-bottom: -160px;
+    
+}
+
+.install_left {
+    margin-top: 460px;
+}
+
+.install_left .install_item:nth-child(1)::before {
+    content: '01';
+    font-size: 96px;
+    color: #944b94;
+    font-weight: bold;
+    position: absolute;
+    left: -18px;
+    top: 43px;
+}
+
+.install_left .install_item:nth-child(2)::before {
+    content: '03';
+    font-size: 96px;
+    color: #944b94;
+    font-weight: bold;
+    position: absolute;
+    left: -18px;
+    top: 43px;
+}
+
+.install_right .install_item:nth-child(1)::before {
+    content: '02';
+    font-size: 96px;
+    color: #944b94;
+    font-weight: bold;
+    position: absolute;
+    left: -18px;
+    top: 43px;
+}
+
+.install_right .install_item:nth-child(2)::before {
+    content: '04';
+    font-size: 96px;
+    color: #944b94;
+    font-weight: bold;
+    position: absolute;
+    left: -18px;
+    top: 43px;
+}
